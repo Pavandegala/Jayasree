@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday JAIMAA </title>
+
+  <!-- This script pulls in Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- These are for the animations and photo gallery -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+
+  <!-- Google Fonts for the Anime look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Link to your new external CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- IMPORTANT: Replace with a real image link after you upload it -->
+  <meta property="og:image" content="https://placehold.co/1200x630/87CEEB/FFFFFF?text=A+Surprise+For+[Name]">
+</head>
+
+<body class="overflow-x-hidden text-white">
+
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor"></div>
+
+  <!-- SAKURA CANVAS -->
+  <canvas id="sakura-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+  <!-- HERO SECTION -->
+  <header class="relative min-h-screen overflow-hidden">
+
+    <!-- BACKGROUND IMAGE -->
+    <img src="img/IMG_20251220_233604_236.jpg.jpeg" alt="Background"
+      class="absolute inset-0 w-full h-full object-cover object-[center_20%] z-[-2]" />
+
+    <!-- DARK OVERLAY -->
+    <div class="absolute inset-0 bg-black/30 z-[-1]"></div>
+
+    <!-- TOP HEADING -->
+    <div class="absolute top-6 left-0 w-full z-20 flex justify-center px-4" data-aos="fade-down"
+      data-aos-duration="1500">
+
+      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl
+        font-anime font-bold
+        text-center
+        leading-tight
+        drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+        Happy Birthday JAIMAA!
+      </h1>
+
+    </div>
+
+    <!-- HERO CONTENT -->
+    <div class="relative z-20 min-h-screen
+      flex justify-between items-end
+      px-6 md:px-10 pb-10 gap-6">
+
+      <!-- COUNTDOWN -->
+      <div data-aos="fade-right" data-aos-duration="1500">
+
+        <div id="countdown" class="px-6 py-5
+
+          rounded-3xl
+
+          backdrop-blur-md
+          bg-white/10
+
+          border border-white/20
+
+          shadow-2xl
+
+          text-center
+
+          text-lg md:text-2xl
+
+          font-semibold
+
+          tracking-[0.15em]
+
+          text-white">
+        </div>
+
+      </div>
+
+      <!-- TYPING MESSAGE -->
+      <div data-aos="fade-up" data-aos-duration="1500">
+
+        <div class="typing-card">
+
+          <!-- DATE -->
+          <p class="typing-date">
+            MAY 28, 2026 ✨
+          </p>
+
+          <!-- TEXT -->
+          <h3 id="typing-text"></h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-6 md:p-12">
+    <!-- PREMIUM SCROLL BANNER -->
+    <!-- PREMIUM FULL WIDTH SCROLL BANNER -->
+
+    <section class="premium-scroll-section">
+
+      <div class="premium-scroll-track">
+
+        <span>💖 HAPPY BIRTHDAY JAIMAA 💖</span>
+        <span>🌸 JAIMAA 🌸</span>
+        <span>✨ KAJU KATLI ✨</span>
+        <span>🎀 JAYASREE 🎀</span>
+        <span>💫 SUBBU 💫</span>
+        <span>🌙 GUDDU 🌙</span>
+
+        <!-- DUPLICATE -->
+
+        <span>💖 HAPPY BIRTHDAY JAIMAA 💖</span>
+        <span>🌸 JAIMAA 🌸</span>
+        <span>✨ KAJU KATLI ✨</span>
+        <span>🎀 JAYASREE 🎀</span>
+        <span>💫 SUBBU 💫</span>
+        <span>🌙 GUDDU 🌙</span>
+
+      </div>
+
+    </section>
+
+    <!-- Section 2: A Letter For You -->
+    <section class="relative my-16 md:my-24 max-w-4xl mx-auto px-4" data-aos="fade-up">
+
+      <!-- Background Image -->
+      <div class="absolute inset-0 rounded-[40px] overflow-hidden z-[-2]">
+        <img src="img\WhatsApp Image 2026-05-26 at 10.34.34 PM.jpeg" alt="Background"
+          class="w-full h-full object-cover opacity-40 scale-110" />
+      </div>
+
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 rounded-[40px] bg-black/30 z-[-1]"></div>
+
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-5xl font-anime text-white mb-10 text-center
+    drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+        A Special Message For You
+      </h2>
+      <!-- CAT STICKER -->
+      <img src="img\catpng.png" alt="Cute Sticker" class="cat-sticker" />
+      <img src="img/cat2.png" class="draggable-sticker floating-cat" style="cursor: grab; left: 0px; top: 685px;">
+      <img src="img\bondam.png" class="draggable-sticker floating-cat" style="cursor: grab; left: -428px; top: 2718px;">
+      <img src="img\cake.png" class="draggable-sticker floating-cat" style="cursor: grab; left: 1173px; top: 3027px;">
+
+
+      <!-- Glassmorphism Card -->
+      <div class="relative overflow-hidden
+
+    text-left
+    text-lg md:text-xl
+    leading-[2]
+    space-y-6
+
+    px-8 py-8 md:px-12 md:py-12
+
+    rounded-[35px]
+
+    backdrop-blur-xl
+    bg-white/10
+
+    border border-white/20
+
+    shadow-[0_8px_32px_rgba(31,38,135,0.37)]
+
+    text-white
+
+    transition-all duration-500
+    hover:bg-white/15
+    hover:scale-[1.01]">
+
+        <!-- Shine Effect -->
+        <div class="absolute inset-0 bg-gradient-to-br
+      from-white/10 via-transparent to-white/5
+      pointer-events-none"></div>
+
+        <!-- Letter Content -->
+        <div class="relative z-10">
+
+          <p class="text-pink-100 text-xl md:text-2xl font-semibold">
+            Hey Jaimaa,
+          </p>
+
+
+
+          <p>
+            We did not become close all at once, but somewhere between small conversations, silly fights, teasing,
+            late-night talks, and endless gossip, you quietly became a part of my life. Now, a day without your text
+            feels incomplete, like something important is missing from it.
+          </p>
+
+          <p class="mt-8">
+            You became comfort in the most unexpected way, and somehow with you, opening up felt easy even though I
+            never do that with anyone. I rant, yap, and share the tiniest details with you because every word I say to
+            you is genuine. Even the way I annoy you, bully you, or start pointless fights comes from affection and the
+            comfort I feel around you. You became one of those rare people my heart chose silently and completely.
+          </p>
+
+          <p class="mt-8">
+            I don’t know where life will take us, but I truly hope this bond never fades with time. Because you are not
+            just my best friend, you are the person I instinctively want to tell everything to and show up for. Some
+            people become memories, but you became my everyday comfort, my safe place, and one of the most beautiful
+            parts of my life. So here’s a special birthday wish to my favorite person, my special one, my very own Kaju
+            Katli 💖
+          </p>
+
+          <!-- Signature -->
+          <div class="text-right pt-6 text-pink-100">
+            Regards ✨
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section 3: The Timeline -->
+    <section class="my-24 px-6">
+
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-6xl font-anime text-center text-pink-300 mb-16
+    drop-shadow-[0_0_20px_rgba(255,192,203,0.6)]" data-aos="fade-up">
+        The Memory Lane 🎀
+      </h2>
+
+      <!-- Cards Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+        <!-- CARD 1 -->
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+
+          <img src="img/WhatsApp Image 2026-05-26 at 9.06.25 PM.jpeg" alt="Memory 1">
+
+          <div class="liquid"></div>
+
+          <div class="content">
+            <h1>Our First Meeting ✨</h1>
+
+            <p>
+              The beginning of a beautiful friendship
+              and countless memories together.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+
+          <img src="img/IMG-20251012-WA0116.jpg.jpeg" alt="Memory 2">
+
+          <div class="liquid"></div>
+
+          <div class="content">
+            <h1>Best Moments 🌸</h1>
+
+            <p>
+              Every small moment somehow turned into
+              something unforgettable.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="500">
+
+          <img src="img/MyImage-1774791673-00.jpg.jpeg" alt="Memory 3">
+
+          <div class="liquid"></div>
+
+          <div class="content">
+            <h1>A Walking Sunshine ✨</h1>
+
+            <p>
+
+              Still trying to understand how someone can be this adorable ✨
+
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section 4: Hall of Fame -->
+    <section class="my-20 md:my-32 px-4 overflow-hidden">
+
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-6xl font-anime text-center text-pink-300 mb-16
+    drop-shadow-[0_0_20px_rgba(255,192,203,0.6)]" data-aos="fade-up">
+        A Little Collection of You 💖
+      </h2>
+
+
+      <!-- Scroll Wrapper -->
+      <div class="relative">
+
+        <!-- LEFT BUTTON -->
+        <button id="scroll-left-btn" class="absolute left-0 top-1/2 -translate-y-1/2 z-20
+      bg-white/10 backdrop-blur-xl
+      border border-white/20
+      hover:bg-white/20
+      rounded-full p-3 shadow-2xl
+      transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <!-- RIGHT BUTTON -->
+        <button id="scroll-right-btn" class="absolute right-0 top-1/2 -translate-y-1/2 z-20
+      bg-white/10 backdrop-blur-xl
+      border border-white/20
+      hover:bg-white/20
+      rounded-full p-3 shadow-2xl
+      transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <!-- SCROLLER -->
+        <div id="hall-of-fame-scroller" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory
+      scrollbar-hide gap-10 px-4 py-6">
+
+          <!-- CARD -->
+          <div class="hall-card no-hover snap-center flex-shrink-0 w-[320px]" data-aos="fade-up" data-aos-delay="100"
+            onclick="openMemory(this)">
+
+            <!-- IMAGE -->
+            <img src="img/BT-17 [9D5553A].png" alt="Photo 1">
+
+            <!-- LIQUID GLASS -->
+            <div class="hall-liquid"></div>
+
+            <!-- CONTENT -->
+            <div class="hall-content">
+
+              <h3>Happy Birthday</h3>
+              <p>"Jaimaa"</p>
+
+              <!-- OPEN BUTTON -->
+              <button class="open-btn">
+                ✨ Open
+              </button>
+
+            </div>
+
+          </div>
+          <!-- CARD 2 -->
+          <div class="hall-card snap-center flex-shrink-0 w-[320px]" data-aos="fade-up" data-aos-delay="200">
+
+            <img src="img/IMG-20251012-WA0116.jpg.jpeg" alt="Photo 2">
+
+            <div class="hall-liquid"></div>
+
+            <div class="hall-content">
+              <h3> 🌸</h3>
+              <p>A little chaos, a little sunshine ✨</p>
+            </div>
+
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="hall-card snap-center flex-shrink-0 w-[320px]" data-aos="fade-up" data-aos-delay="300">
+
+            <img src="img/1000134042.jpg.jpeg" alt="Photo 3">
+
+            <div class="hall-liquid"></div>
+
+            <div class="hall-content">
+              <h3>Kaju Katli💖</h3>
+              <p>Certified cutie since day one 💖</p>
+            </div>
+
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="hall-card snap-center flex-shrink-0 w-[320px]" data-aos="fade-up" data-aos-delay="400">
+
+            <img src="img/IMG_20250818_231544_311.jpg.jpeg" alt="Photo 4">
+
+            <div class="hall-liquid"></div>
+
+            <div class="hall-content">
+              <h3>🌙</h3>
+              <p>Pure heart, pretty soul, endless warmth 🎀</p>
+            </div>
+
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="hall-card snap-center flex-shrink-0 w-[320px]" data-aos="fade-up" data-aos-delay="500">
+
+            <img src="img/IMG_20260326_000233_336.jpg.jpeg" alt="Photo 5">
+
+            <div class="hall-liquid"></div>
+
+            <div class="hall-content">
+              <h3>🎀</h3>
+              <p>Pretty vibes only 💫</p>
+            </div>
+
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="hall-card snap-center flex-shrink-0 w-[320px]" data-aos="fade-up" data-aos-delay="600">
+
+            <img src="img/WhatsApp Image 2026-05-25 at 11.22.57 PM.jpeg" alt="Photo 6">
+
+            <div class="hall-liquid"></div>
+
+            <div class="hall-content">
+              <h3>⭐</h3>
+              <p>Elegance in human form 🌸</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section 5: The Gallery -->
+    <section class="my-20 md:my-32 px-4 overflow-hidden">
+
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-6xl font-anime text-center text-pink-300 mb-6
+    drop-shadow-[0_0_20px_rgba(255,192,203,0.6)]" data-aos="fade-up">
+        The Stories Only We Understand 🌙
+      </h2>
+
+      <p class="text-center
+  text-lg md:text-xl
+
+  bg-gradient-to-r
+  from-pink-200
+  via-rose-100
+  to-pink-300
+
+  bg-clip-text
+  text-transparent
+
+  font-medium
+
+  tracking-wide
+
+  mb-14
+
+  drop-shadow-[0_0_12px_rgba(255,192,203,0.35)]" data-aos="fade-up" data-aos-delay="100">
+        ( Somewhere between chaos, comfort, and laughter )
+      </p>
+
+      <!-- GALLERY GRID -->
+      <div id="lightgallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+
+        <!-- CARD 1 -->
+        <div data-aos="zoom-in" class="gallery-card reveal-gallery">
+
+          <img src="img/Picsart_25-10-13_17-34-42-572.jpg.jpeg" alt="Memory 1">
+
+          <div class="gallery-liquid"></div>
+
+          <!-- CONTENT -->
+          <div class="gallery-content">
+            <h3>Memory 01 ✨</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <!-- HIDDEN MESSAGE -->
+          <div class="hidden-message">
+            <h3>💖 Hidden Note</h3>
+            <p>
+              Still one of my favorite memories ever 🌸
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div data-aos="zoom-in" data-aos-delay="100" class="gallery-card reveal-gallery">
+
+          <img src="img/WhatsApp Image 2026-05-25 at 11.41.49 PM (1).jpeg" alt="Memory 2">
+
+          <div class="gallery-liquid"></div>
+
+          <div class="gallery-content">
+            <h3>Memory 02 🎀</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <div class="hidden-message">
+            <h3>💌Top Secret </h3>
+            <p>
+              I know This Is You ✨
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div data-aos="zoom-in" data-aos-delay="200" class="gallery-card reveal-gallery">
+
+          <img src="img/IMG_20251227_155332_673.jpg.jpeg" alt="Memory 3">
+
+          <div class="gallery-liquid"></div>
+
+          <div class="gallery-content">
+            <h3>Memory 03 🌙</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <div class="hidden-message">
+            <h3>💖 Tiny Note</h3>
+            <p>
+              Some souls just feel like home 💫
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div data-aos="zoom-in" data-aos-delay="300" class="gallery-card reveal-gallery">
+
+          <img src="img/Snapchat-201220678.jpg.jpeg" alt="Memory 4">
+
+          <div class="gallery-liquid"></div>
+
+          <div class="gallery-content">
+            <h3>Memory 04 🌸</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <div class="hidden-message">
+            <h3>✨ Hidden Memory</h3>
+            <p>
+              All Time Favorite 🎀
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 5 -->
+        <div data-aos="zoom-in" data-aos-delay="400" class="gallery-card reveal-gallery">
+
+          <img src="img\IMG_20260101_135541.jpg.jpeg" alt="Memory 5">
+
+          <div class="gallery-liquid"></div>
+
+          <div class="gallery-content">
+            <h3>Memory 05 💖</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <div class="hidden-message">
+            <h3>🌙 Secret</h3>
+            <p>
+              You make ordinary moments magical ✨
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 6 -->
+        <div data-aos="zoom-in" data-aos-delay="500" class="gallery-card reveal-gallery">
+
+          <img src="img/WhatsApp Image 2026-05-26 at 10.34.34 PM.jpeg" alt="Memory 6">
+
+          <div class="gallery-liquid"></div>
+
+          <div class="gallery-content">
+            <h3>Memory 06 💫</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <div class="hidden-message">
+            <h3>💌 Tiny Reminder</h3>
+            <p>
+              Some things are priceless simply because of who gave them 🎀
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 7 -->
+        <div data-aos="zoom-in" data-aos-delay="600" class="gallery-card reveal-gallery">
+
+          <img src="img/IMG_20251227_182330_697.jpg.jpeg" alt="Memory 7">
+
+          <div class="gallery-liquid"></div>
+
+          <div class="gallery-content">
+            <h3>Memory 07 🌷</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <div class="hidden-message">
+            <h3>💖 Hidden Thought</h3>
+            <p>
+              Little version of the same beautiful soul 🌸
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD 8 -->
+        <div data-aos="zoom-in" data-aos-delay="700" class="gallery-card reveal-gallery">
+
+          <img src="img\BT-17 [9D5553A].png" alt="Memory 8">
+
+          <div class="gallery-liquid"></div>
+
+          <div class="gallery-content">
+            <h3>Memory 08 ✨</h3>
+            <p>Tap to reveal 💌</p>
+          </div>
+
+          <div class="hidden-message">
+            <h3>🌙 Final Note</h3>
+            <p>
+              In every version of life, we'd still find each other 💖
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section 6: Finale -->
+    <section class="my-16 md:my-24" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-anime text-center mb-4 text-pink-300
+drop-shadow-[0_0_20px_rgba(255,192,203,0.6)]">
+        Happy Birthday JAIMAA
+      </h2>
+      <div class="max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-navy">
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white p-8 text-center">
+    <p>Enjoy your day to the fullest.</p>
+    <p class="text-sm opacity-70 mt-2">Hope you liked it...</p>
+  </footer>
+
+  <!-- These scripts are for the animations and photo gallery -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <!-- Link to your new external JavaScript file -->
+  <audio id="birthday-audio" src="audio\tum_tum.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
