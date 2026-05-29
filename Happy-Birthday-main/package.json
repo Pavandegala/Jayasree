@@ -1,0 +1,15 @@
+{
+  "name": "happy-birthday-main",
+  "version": "1.0.0",
+  "description": "A creative and heartfelt way to wish someone a happy birthday — through a personalized website!   Originally created for someone special, now open for everyone to use and share 💖",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
