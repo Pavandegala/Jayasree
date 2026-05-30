@@ -1,0 +1,15 @@
+{
+  "name": "happy-birthday-jaimaa",
+  "version": "1.0.0",
+  "description": "Happy Birthday website with Vercel Web Analytics",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": ["birthday", "website"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
